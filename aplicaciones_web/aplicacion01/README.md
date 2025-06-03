@@ -94,10 +94,9 @@ Pero la IP es designada por el sistema operativo o el contenedor.
 
 Al acceder a nuestro sitio web, en caso, el no se nos muestra nada, ya que nuestra ruta donde se encuentra el Index es /hola, por lo tanto para acceder hay que agregar esta dirección al la URL.
 
-<div align="center"> <iframe src="https://drive.google.com/file/d/1CshlSlIJCGmJVYUl5hg9LzmSr52iNna_/preview" width="640" height="250" allow="autoplay"></iframe>
+![Screenshot1](/aplicaciones_web/aplicacion01/screenshot1.png)
 
 En la imagen se muestra que después de la URL usamos la ruta de nuestro **Index**, en este caso **/hola**
-</div>
 
 ## 1.9 Detener el servidor
 Para detener nuestra pagina web, dentro de la consola usaremos las teclas *Ctrl + C*, esta conbinacion detendra el servidor web
