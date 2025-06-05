@@ -25,10 +25,11 @@ class Calculadora:
             resultado = numero1 - numero2
         elif operacion == "multiplicacion":
             resultado = numero1 * numero2
-        elif operacion == "division" and numero2 != 0:
-            resultado = numero1 / numero2
-        else:
-            resultado = "Ingresa un número valido"
+        elif operacion == "division":
+            if numero2 == 0:
+                resultado = "Error"
+            else:
+                resultado = numero1 / numero2
             
         return render.calculadora(resultado)
 
