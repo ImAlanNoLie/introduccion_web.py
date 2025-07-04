@@ -15,8 +15,12 @@ class Calculadora:
     def POST(self):
         formulario = web.input()
 
-        numero1 = int(formulario.inp_numero1)
-        numero2 = int(formulario["inp_numero2"])
+        try:
+            numero1 = int(formulario.inp_numero1)
+            numero2 = int(formulario["inp_numero2"])
+        except ValueError:
+            return render.calculadora("Error",0,0)
+    
         operacion = formulario.btn_operation
 
         if operacion == "suma":
@@ -27,11 +31,11 @@ class Calculadora:
             resultado = numero1 * numero2
         elif operacion == "division":
             if numero2 == 0:
-                resultado = "Error"
+                resultado = "Error: Por favor, ingresa un número valido"
             else:
                 resultado = numero1 / numero2
-            
-        return render.calculadora(resultado)
+
+        return render.calculadora(resultado, numero1, numero2)
 
 if __name__ == "__main__":
     app.run()

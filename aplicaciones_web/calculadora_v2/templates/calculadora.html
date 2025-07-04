@@ -1,4 +1,4 @@
-$def with(resultado=0)
+$def with(resultado=0, numero1=0, numero2=0) 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,11 +12,11 @@ $def with(resultado=0)
     <form method="POST">
 
         <label for="inp_numero1" name="lbl_numero1">Número 1:</label><br>
-        <input type="number" name="inp_numero1" id="inp_numero1" value=0><br>
+        <input type="number" name="inp_numero1" id="inp_numero1" value=$numero1><br>
 
         
         <label for="inp_numero2" name="lbl_numero2">Número 2:</label><br>
-        <input type="number" name="inp_numero2" id="inp_numero2" value=0><br>
+        <input type="number" name="inp_numero2" id="inp_numero2" value=$numero2><br>
 
         
         <label for="inp_resultado" name="lbl_resultado">Resultado:</label><br>
@@ -25,7 +25,6 @@ $def with(resultado=0)
         <button type="submit" name="btn_operation" id="btn_suma" value="suma">Suma</button>
         <button type="submit" name="btn_operation" id="btn_resta" value="resta">Resta</button>
         <button type="submit" name="btn_operation" id="btn_multiplicacion" value="multiplicacion">Multiplicación</button>
-        <button type="submit" name="btn_operation" id="btn_divison" value="division">División</button>
-
+        <button type="submit" name="btn_operation" id="btn_division" value="division">División</button>
 
 </html>
